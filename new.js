@@ -1,4 +1,1 @@
-function dataType(){
-    
-
-}
+alert ("hello world")
