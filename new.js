@@ -20,6 +20,8 @@ document.getElementById("pre_details").innerHTML =
     document.querySelector(".details").innerHTML =
     `Employee ID: ${obj.empId}<br>Employee Name: ${obj.empName}<br>Employee Salary: ${obj.empSalary}  `;    
 
+//making reference of array  //
+    
 let fruits = ["apple" , "mango" , "banana" , "pumpkin"];
 let realFruits = fruits;
 realFruits[3] = "orange";
@@ -38,5 +40,18 @@ console.log(copyFruits);
 document.querySelector(".copyFruits").innerHTML =
     `<b>${fruits[2]}</b> changed to <b>${copyFruits[2]}</b> to show that it is unrelated copy`;
 
+//making copy of object (not reference)//  
+let student = {
+    "name":"Roy",
+    "age":18,
+    "class":"12th",
+    "roll_no":10
+};
+let studDetails = Object.assign({},student);
+studDetails.name = "Joy";
+console.log(`Student 1 : ${student.name}`);
+console.log(`Student 2 : ${studDetails.name}`);
 
-
+document.querySelector(".students").innerHTML =
+    `<b>${student.name}</b> changed to <b>${studDetails.name}</b> to show that it is unrelated copy of object`;
+//above written is the shallow copy of an object//
