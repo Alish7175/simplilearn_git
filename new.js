@@ -55,3 +55,12 @@ console.log(`Student 2 : ${studDetails.name}`);
 document.querySelector(".students").innerHTML =
     `<b>${student.name}</b> changed to <b>${studDetails.name}</b> to show that it is unrelated copy of object`;
 //above written is the shallow copy of an object//
+//contant object property can be changed specifically//
+const constantObj = {
+    "hero honda":"10",
+    "pulsar":20,
+    "hayabusa":1,
+    "yamaha":1 
+} 
+constantObj.pulsar =10;
+console.log(constantObj);
