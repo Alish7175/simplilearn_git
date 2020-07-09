@@ -28,3 +28,15 @@ console.log(fruits);
 document.querySelector(".realFruits").innerHTML =
     `Pumpkin changed to ${fruits[3]} by creating reference  `;    
 
+//making copy of array (not reference)//
+
+let copyFruits = Array.from(fruits);
+copyFruits[2] = "watermelon";
+console.log(fruits);
+console.log(copyFruits);
+
+document.querySelector(".copyFruits").innerHTML =
+    `<b>${fruits[2]}</b> changed to <b>${copyFruits[2]}</b> to show that it is unrelated copy`;
+
+
+
