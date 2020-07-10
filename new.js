@@ -64,3 +64,13 @@ const constantObj = {
 } 
 constantObj.pulsar =10;
 console.log(constantObj);
+
+//splicing arrays
+let fruits2 = ["apple" , " banana" , " mango" ," peach"];
+let fruits3 = Array.from(fruits2);
+fruits2.splice(2 , 2);
+console.log(fruits2);
+document.getElementById("fruitArraysplice1").innerHTML = 
+`New array of fruits after splice is ${fruits2}`;
+document.getElementById("fruitArray1").innerHTML = 
+`New array of fruits after splice is ${fruits3}`;
