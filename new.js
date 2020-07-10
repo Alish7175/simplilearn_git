@@ -74,3 +74,16 @@ document.getElementById("fruitArraysplice1").innerHTML =
 `New array of fruits after splice is ${fruits2}`;
 document.getElementById("fruitArray1").innerHTML = 
 `New array of fruits after splice is ${fruits3}`;
+
+//function argumeents
+
+function f1(p1 , p2){
+    var i , sum1 = 0;
+    for(i=0 ; i<f1.arguments.length; i++){
+        sum1+=f1.arguments[i];
+    }
+    console.log(f1.arguments);
+    document.getElementById("f1").innerHTML = 
+`List of params: ${f1.arguments} <br>The sum of all params is ${sum1}`;
+}
+f1(1 , 21 , 89)  
