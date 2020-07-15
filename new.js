@@ -84,6 +84,7 @@ function f1(p1 , p2){
     }
     console.log(f1.arguments);
     document.getElementById("f1").innerHTML = 
-`List of params: ${f1.arguments} <br>The sum of all params is ${sum1}`;
+`function.arguments used<br>The sum of all params is ${sum1}`;
 }
 f1(1 , 21 , 89)  
+con
