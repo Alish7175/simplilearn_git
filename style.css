@@ -1,17 +1,36 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap);
 
-
+/* http://blabber.ancorathemes.com/   */
 
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 2 rem;
     font-weight: 400;
     line-height: 1.7;
+    overflow-x: hidden;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+   height: 30rem;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 50%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
 }
