@@ -37,3 +37,9 @@ body{
 div#carousel .carousel-inner {
     height: 84vh;
 }
+.c1 {
+    background-color: #008080bd;
+}
+nav#navbar, #navbarNav {
+    background-color: #bac6ef;
+}
