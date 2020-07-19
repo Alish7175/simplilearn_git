@@ -1,5 +1,9 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
+
+
+
 
 /* http://blabber.ancorathemes.com/   */
 
@@ -33,13 +37,17 @@ body{
     padding-bottom: 20px;
     color: #fff;
     text-align: center;
+    font-family: 'Lobster', cursive;
 }
 div#carousel .carousel-inner {
     height: 84vh;
 }
 .c1 {
-    background-color: #008080bd;
+    background-color: #888ed487;
 }
 nav#navbar, #navbarNav {
     background-color: #bac6ef;
+}
+h1 ,h2{
+    font-family: 'Lobster', cursive;
 }
