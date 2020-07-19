@@ -48,6 +48,19 @@ div#carousel .carousel-inner {
 nav#navbar, #navbarNav {
     background-color: #bac6ef;
 }
-h1 ,h2{
+h1 ,h2 ,h5{
     font-family: 'Lobster', cursive;
+}
+#body_cover{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    z-index: 0;
+    background: rgb(184,198,223); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(184,198,223,1) 51%, rgba(109,136,183,1) 78%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(184,198,223,1) 51%,rgba(109,136,183,1) 78%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(184,198,223,1) 51%,rgba(109,136,183,1) 78%);
 }
