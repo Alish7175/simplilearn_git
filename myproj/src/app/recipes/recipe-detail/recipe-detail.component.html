@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img src="{{selectedRecipe?.imagePath}}" alt="" class="img-responsive">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{selectedRecipe?.name}}</h1>
+  </div>
+  <div class="col-xs-12">
+    <button class="btn btn-success">To Shopping List</button>
+    <button class="btn btn-primary">Edit</button>
+    <button class="btn btn-danger">Delete</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <p>{{selectedRecipe?.description}}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    Ingredients
+  </div>
+</div>
+<br>
+
+<form (ngSubmit)="addrecipe(data)" #data=ngForm>
+
+  
+
+   
+    <input class="form-control" name="rname" #uname=ngModel required minlength="5" ngModel type="text" id="Recipe name" placeholder="Recipe Name"><br>
+    <!--<div *ngIf= 'uname.invalid'>Name cannot be blank</div>-->
+    <div *ngIf= 'uname.invalid'>
+      <div *ngIf= 'uname.errors.required'>Name cannot be blank</div>
+      <div *ngIf= 'uname.errors.minlength'>Name cannot be less than 5 alphabets</div>
+    </div>
+
+  
+    
+    <input type="text" class="form-control" #uemail=ngModel email name="remail" required ngModel id="exampleInputEmail1" placeholder="Email"><br>
+    <div *ngIf= 'uemail.invalid'>
+      <div *ngIf= 'uemail.errors.required'>Email cannot be blank</div>
+      <div *ngIf= 'uemail.errors.email'>Email is incorrect</div>
+    </div>
+    
+  
+   
+    <input type="text" class="form-control" #uprice=ngModel name="rprice" required ngModel id="price" placeholder="Price"><br>
+    <div *ngIf= 'uprice.invalid'>Price cannot be blank</div>
+  
+  
+    <input type="text" class="form-control" #uimage=ngModel name="rimage" required ngModel id="image" placeholder="Img address" ><br>
+    <div *ngIf= 'uimage.invalid'>Image cannot be blank</div>
+
+  <button type="submit" class="btn btn-primary form-control" [disabled]= "data.invalid" >Submit</button>
+</form>
